@@ -1,0 +1,47 @@
+body {
+    background: #333;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    padding-top: 50px;
+}
+
+.box {
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes myanimation {
+    0% {background-color: #fff;left: 0px;top: 0px;border-radius: 0 0 0 0;}
+    25%{background-color: #a0f;left: 300px;top: 0px;border-radius:50% 0 0 0;}
+    50%{background-color: #f00;left: 300px;top: 300px;border-radius:50% 50% 0 0;}
+    75%{background-color: #10f;left: 0px;top:300px;border-radius:50% 50% 50% 0;}
+    100%{background-color: #fff;left: 0px;top: 0px;border-radius:50% 50% 50% 50%;}
+}
+
+.box-1 {
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    transition-property: background, border-radius;
+    transition-duration: 2s, 3s;
+}
+
+.box-1:hover {
+    background: #f00;
+    border-radius: 50%;
+}
