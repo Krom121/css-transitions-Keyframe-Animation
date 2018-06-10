@@ -37,11 +37,12 @@ p {
     position: relative;
     margin: auto;
     top: 200px;
-    transition-property: background, border-radius;
-    transition-duration: 2s, 3s;
+    transition-property: background, border-radius, transform;
+    transition-duration: 1s, 3s;
 }
 
 .box-1:hover {
     background: #f00;
     border-radius: 50%;
+    transform: rotateY(360deg);
 }
